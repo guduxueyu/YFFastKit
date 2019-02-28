@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FastModel.h"
 @class FastImageViewModel;
 
 
@@ -15,7 +15,7 @@ typedef FastImageViewModel * (^FastImage)(UIImage *image);
 
 @interface UIImageView (fast)
 
--(FastLabelModel *)fast;
+-(FastImageViewModel *)fast;
 
 +(UIImageView *)imageView;
 +(UIImageView *)imageViewAndSuperview:(UIView *)superview;

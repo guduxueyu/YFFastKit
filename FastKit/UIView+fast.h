@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FastModel.h"
 @interface UIView (fast)
 
 /** 快速属性 */

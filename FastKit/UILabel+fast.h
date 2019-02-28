@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FastModel.h"
 @class FastLabelModel;
 
 typedef FastLabelModel * (^FastText)(NSString *text);

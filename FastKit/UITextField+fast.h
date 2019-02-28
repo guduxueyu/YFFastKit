@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FastModel.h"
 NS_ASSUME_NONNULL_BEGIN
 @class FastTextFieldModel;
 

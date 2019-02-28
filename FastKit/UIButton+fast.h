@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FastModel.h"
 @class FastButtonModel;
 typedef FastButtonModel * (^FastTitleEdgeInsets)(UIEdgeInsets titleEdgeInsets);
 typedef FastButtonModel * (^FastImageEdgeInsets)(UIEdgeInsets imageEdgeInsets);

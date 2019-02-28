@@ -9,7 +9,6 @@
 #ifndef FastKit_h
 #define FastKit_h
 
-#import "FastModel.h"
 #import "UIView+fast.h"
 #import "UILabel+fast.h"
 #import "UIButton+fast.h"
