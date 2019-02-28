@@ -21,6 +21,10 @@
 		C2EF3A972227B07C0041A869 /* UIButton+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A8B2227B07C0041A869 /* UIButton+fast.m */; };
 		C2EF3A982227B07C0041A869 /* UIImageView+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A8C2227B07C0041A869 /* UIImageView+fast.m */; };
 		C2EF3A992227B07C0041A869 /* UIView+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A8E2227B07C0041A869 /* UIView+fast.m */; };
+		C2EF3A9C2227BE950041A869 /* FastLabelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A9B2227BE950041A869 /* FastLabelModel.m */; };
+		C2EF3A9F2227BEFF0041A869 /* FastButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A9E2227BEFF0041A869 /* FastButtonModel.m */; };
+		C2EF3AA22227BF4C0041A869 /* FastTextFieldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3AA12227BF4C0041A869 /* FastTextFieldModel.m */; };
+		C2EF3AA52227BFA70041A869 /* FastImageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3AA42227BFA70041A869 /* FastImageViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,14 @@
 		C2EF3A912227B07C0041A869 /* UILabel+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+fast.h"; sourceTree = "<group>"; };
 		C2EF3A922227B07C0041A869 /* FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastKit.h; sourceTree = "<group>"; };
 		C2EF3A932227B07C0041A869 /* UIImageView+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+fast.h"; sourceTree = "<group>"; };
+		C2EF3A9A2227BE950041A869 /* FastLabelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastLabelModel.h; sourceTree = "<group>"; };
+		C2EF3A9B2227BE950041A869 /* FastLabelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastLabelModel.m; sourceTree = "<group>"; };
+		C2EF3A9D2227BEFF0041A869 /* FastButtonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastButtonModel.h; sourceTree = "<group>"; };
+		C2EF3A9E2227BEFF0041A869 /* FastButtonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastButtonModel.m; sourceTree = "<group>"; };
+		C2EF3AA02227BF4C0041A869 /* FastTextFieldModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastTextFieldModel.h; sourceTree = "<group>"; };
+		C2EF3AA12227BF4C0041A869 /* FastTextFieldModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastTextFieldModel.m; sourceTree = "<group>"; };
+		C2EF3AA32227BFA70041A869 /* FastImageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastImageViewModel.h; sourceTree = "<group>"; };
+		C2EF3AA42227BFA70041A869 /* FastImageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastImageViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,12 +174,20 @@
 				C2EF3A882227B07C0041A869 /* FastModel.m */,
 				C2EF3A912227B07C0041A869 /* UILabel+fast.h */,
 				C2EF3A8A2227B07C0041A869 /* UILabel+fast.m */,
+				C2EF3A9A2227BE950041A869 /* FastLabelModel.h */,
+				C2EF3A9B2227BE950041A869 /* FastLabelModel.m */,
 				C2EF3A902227B07C0041A869 /* UIButton+fast.h */,
 				C2EF3A8B2227B07C0041A869 /* UIButton+fast.m */,
+				C2EF3A9D2227BEFF0041A869 /* FastButtonModel.h */,
+				C2EF3A9E2227BEFF0041A869 /* FastButtonModel.m */,
 				C2EF3A8F2227B07C0041A869 /* UITextField+fast.h */,
 				C2EF3A892227B07C0041A869 /* UITextField+fast.m */,
+				C2EF3AA02227BF4C0041A869 /* FastTextFieldModel.h */,
+				C2EF3AA12227BF4C0041A869 /* FastTextFieldModel.m */,
 				C2EF3A932227B07C0041A869 /* UIImageView+fast.h */,
 				C2EF3A8C2227B07C0041A869 /* UIImageView+fast.m */,
+				C2EF3AA32227BFA70041A869 /* FastImageViewModel.h */,
+				C2EF3AA42227BFA70041A869 /* FastImageViewModel.m */,
 			);
 			path = FastKit;
 			sourceTree = "<group>";
@@ -305,11 +325,15 @@
 				C2EF3A992227B07C0041A869 /* UIView+fast.m in Sources */,
 				C2EF3A952227B07C0041A869 /* UITextField+fast.m in Sources */,
 				C2EF3A592227B04B0041A869 /* ViewController.m in Sources */,
+				C2EF3AA22227BF4C0041A869 /* FastTextFieldModel.m in Sources */,
 				C2EF3A982227B07C0041A869 /* UIImageView+fast.m in Sources */,
+				C2EF3A9C2227BE950041A869 /* FastLabelModel.m in Sources */,
 				C2EF3A942227B07C0041A869 /* FastModel.m in Sources */,
+				C2EF3AA52227BFA70041A869 /* FastImageViewModel.m in Sources */,
 				C2EF3A642227B04E0041A869 /* main.m in Sources */,
 				C2EF3A972227B07C0041A869 /* UIButton+fast.m in Sources */,
 				C2EF3A962227B07C0041A869 /* UILabel+fast.m in Sources */,
+				C2EF3A9F2227BEFF0041A869 /* FastButtonModel.m in Sources */,
 				C2EF3A562227B04B0041A869 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
