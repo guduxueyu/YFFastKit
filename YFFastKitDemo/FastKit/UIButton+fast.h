@@ -1,16 +1,15 @@
 //
-//  FastButtonModel.h
-//  YFFastKitDemo
+//  UIButton+fast.h
+//  CXJOrderApp
 //
-//  Created by 耿远风 on 2019/2/28.
-//  Copyright © 2019 耿远风. All rights reserved.
+//  Created by 耿远风 on 2018/11/12.
+//  Copyright © 2018年 耿远风. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "FastModel.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface FastButtonModel : FastModel
+@class FastButtonModel;
 typedef FastButtonModel * (^FastTitleEdgeInsets)(UIEdgeInsets titleEdgeInsets);
 typedef FastButtonModel * (^FastImageEdgeInsets)(UIEdgeInsets imageEdgeInsets);
 typedef FastButtonModel * (^FastShowsTouchWhenHighlighted)(BOOL showsTouchWhenHighlighted);
@@ -25,9 +24,29 @@ typedef FastButtonModel * (^FastBackgroundImageNormal)(NSString *backgroundImage
 typedef FastButtonModel * (^FastBackgroundImageSelect)(NSString *backgroundImageSelect);
 typedef FastButtonModel * (^FastImageNormal)(NSString *imageNormal);
 typedef FastButtonModel * (^FastImageSelect)(NSString *imageSelect);
+@interface UIButton (fast)
 
+-(FastButtonModel *)fast;
+
+/** **标题** Button ，15号字 */
++(UIButton *)titleButton;
+/** **标题** Button ，15号字 ，并添加到父视图 */
++(UIButton *)titleButtonAndSuperview:(UIView *)superview;
+/** **普通按钮** Button ，14号字 */
++(UIButton *)contentButton;
+/** **普通按钮** Button ，14号字 */
++(UIButton *)contentButtonAndSuperview:(UIView *)superview;
+/** **完成** Button ，蓝色18号字 */
++(UIButton *)doneButton;
+/** **完成** Button ，蓝色18号字 */
++(UIButton *)doneButtonAndSuperview:(UIView *)superview;
+@end
+
+@interface FastButtonModel : FastModel
 
 @property (nonatomic,strong)UIButton *button;
+
+
 
 /** 文字内边距 */
 @property (nonatomic, copy, readonly)FastTitleEdgeInsets titleEdgeInsets;
@@ -59,6 +78,3 @@ typedef FastButtonModel * (^FastImageSelect)(NSString *imageSelect);
 @property (nonatomic, copy, readonly)FastImageSelect imageSelect;
 @end
 
-
-
-NS_ASSUME_NONNULL_END

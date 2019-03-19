@@ -31,3 +31,19 @@
     return imgView;
 }
 @end
+@implementation FastImageViewModel
+
+@synthesize image=_image;
+
+-(FastImage)image{
+    if (!_image) {
+        __weak __typeof(self) weakSelf = self;
+        _image=^(UIImage *image){
+            weakSelf.imageView.image=image;
+            return weakSelf;
+        };
+    }
+    return _image;
+}
+
+@end

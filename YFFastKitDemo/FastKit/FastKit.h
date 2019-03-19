@@ -14,4 +14,5 @@
 #import "UIButton+fast.h"
 #import "UITextField+fast.h"
 #import "UIImageView+fast.h"
+
 #endif /* FastKit_h */

@@ -1,15 +1,17 @@
 //
-//  FastTextFieldModel.h
-//  YFFastKitDemo
+//  UITextField+fast.h
+//  demo工程
 //
-//  Created by 耿远风 on 2019/2/28.
+//  Created by 耿远风 on 2019/1/9.
 //  Copyright © 2019 耿远风. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "FastModel.h"
 
+NS_ASSUME_NONNULL_BEGIN
+@class FastTextFieldModel;
 
-@interface FastTextFieldModel : FastModel
 typedef FastTextFieldModel * (^FastFieldText)(NSString *text);
 typedef FastTextFieldModel * (^FastFieldAttributedText)(NSAttributedString *attributedText);
 typedef FastTextFieldModel * (^FastFieldTextColor)(UIColor *textColor);
@@ -40,6 +42,23 @@ typedef FastTextFieldModel * (^FastFieldKeyboardType)(UIKeyboardType keyboardTyp
 typedef FastTextFieldModel * (^FastFieldReturnKeyType)(UIReturnKeyType returnKeyType);
 typedef FastTextFieldModel * (^FastFieldSecureTextEntry)(BOOL secureTextEntry);
 typedef FastTextFieldModel * (^FastFieldTextFieldDidChange)(id target,SEL textFieldDidChange);
+
+
+@interface UITextField (fast)
+-(FastTextFieldModel *)fast;
+
+/** **文字** 输入框 */
++(UITextField *)textField;
+/** **文字** 输入框 ，并添加到父视图 */
++(UITextField *)textFieldAndSuperview:(UIView *)superview;
+/** **数字** 输入框 ，并添加到父视图 */
++(UITextField *)numberField;
+/** **数字** 输入框 ，并添加到父视图 */
++(UITextField *)numberFieldAndSuperview:(UIView *)superview;
+@end
+
+
+@interface FastTextFieldModel : FastModel
 
 @property (nonatomic,strong)UITextField *textField;
 
@@ -75,3 +94,4 @@ typedef FastTextFieldModel * (^FastFieldTextFieldDidChange)(id target,SEL textFi
 @property (nonatomic, copy, readonly)FastFieldTextFieldDidChange textFieldDidChange;
 
 @end
+NS_ASSUME_NONNULL_END

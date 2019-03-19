@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YFFastKit"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "快速创建控件"
   s.description  = <<-DESC
 "快速创建控件"

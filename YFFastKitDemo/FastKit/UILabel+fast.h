@@ -1,17 +1,16 @@
 //
-//  FastLabelModel.h
-//  YFFastKitDemo
+//  UILabel+fast.h
+//  CXJOrderApp
 //
-//  Created by 耿远风 on 2019/2/28.
-//  Copyright © 2019 耿远风. All rights reserved.
+//  Created by 耿远风 on 2018/11/3.
+//  Copyright © 2018年 耿远风. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "FastModel.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@class FastLabelModel;
 
-
-@interface FastLabelModel : FastModel
 typedef FastLabelModel * (^FastText)(NSString *text);
 typedef FastLabelModel * (^FastFont)(UIFont *font);
 typedef FastLabelModel * (^FastTextColor)(UIColor *textColor);
@@ -20,6 +19,31 @@ typedef FastLabelModel * (^FastHighlightedTextColor)(UIColor *highlightedTextCol
 typedef FastLabelModel * (^FastTextAlignment)(NSTextAlignment textAlignment);
 typedef FastLabelModel * (^FastLineBreakMode)(NSLineBreakMode lineBreakMode);
 typedef FastLabelModel * (^FastNumberOfLines)(NSInteger numberOfLines);
+
+
+@interface UILabel (fast)
+
+-(FastLabelModel *)fast;
+
+/** **标题** Label，15号字 */
++(UILabel *)titleLabel;
+/** **标题** Label，15号字 ，并添加到父视图 */
++(UILabel *)titleLabelAndSuperview:(UIView *)superview;
+/** **大标题** Label，18号字 */
++(UILabel *)bigTitleLabel;
+/** **大标题** Label，18号字 ，并添加到父视图 */
++(UILabel *)bigTitleLabelAndSuperview:(UIView *)superview;
+/** **内容** Label，14号字 */
++(UILabel *)contentLabel;
+/** **内容** Label，14号字 ，并添加到父视图 */
++(UILabel *)contentLabelAndSuperview:(UIView *)superview;
+/** **详情** Label，12号字 */
++(UILabel *)detailLabel;
+/** **详情** Label，12号字 ，并添加到父视图 */
++(UILabel *)detailLabelAndSuperview:(UIView *)superview;
+@end
+
+@interface FastLabelModel : FastModel
 
 @property (nonatomic,strong)UILabel *label;
 
@@ -33,5 +57,3 @@ typedef FastLabelModel * (^FastNumberOfLines)(NSInteger numberOfLines);
 @property (nonatomic, copy, readonly)FastNumberOfLines numberOfLines;
 
 @end
-
-NS_ASSUME_NONNULL_END
