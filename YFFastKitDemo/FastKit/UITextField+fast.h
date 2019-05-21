@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "FastModel.h"
 
-NS_ASSUME_NONNULL_BEGIN
 @class FastTextFieldModel;
 
 typedef FastTextFieldModel * (^FastFieldText)(NSString *text);
@@ -94,4 +93,3 @@ typedef FastTextFieldModel * (^FastFieldTextFieldDidChange)(id target,SEL textFi
 @property (nonatomic, copy, readonly)FastFieldTextFieldDidChange textFieldDidChange;
 
 @end
-NS_ASSUME_NONNULL_END
