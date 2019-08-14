@@ -51,6 +51,24 @@
     [superview addSubview:button];
     return button;
 }
+/** **普通按钮** Button ，12号字 */
++(UIButton *)detailButton{
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor=[UIColor whiteColor];
+    
+    [button setTitleColor:[UIColor colorWithRed:0x5f/255.f green:0x5f/255.f blue:0x5f/255.f alpha:1] forState:UIControlStateNormal];
+    button.titleLabel.font=[UIFont systemFontOfSize:14];
+    return button;
+}
+/** **普通按钮** Button ，12号字 */
++(UIButton *)detailButtonAndSuperview:(UIView *)superview{
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor=[UIColor whiteColor];
+    [button setTitleColor:[UIColor colorWithRed:0x5f/255.f green:0x5f/255.f blue:0x5f/255.f alpha:1] forState:UIControlStateNormal];
+    button.titleLabel.font=[UIFont systemFontOfSize:14];
+    [superview addSubview:button];
+    return button;
+}
 /** **完成** Button ，蓝色18号字 */
 +(UIButton *)doneButton{
     UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
@@ -69,6 +87,19 @@
     [superview addSubview:button];
     return button;
 }
+/** 纯图片Button */
++(UIButton *)imageButton:(NSString *)imageName{
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    return button;
+}
+/** 纯图片Button */
++(UIButton *)imageButton:(NSString *)imageName andSuperview:(UIView *)superview{
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [superview addSubview:button];
+    return button;
+}
 @end
 
 @implementation FastButtonModel
@@ -77,6 +108,7 @@
 @synthesize imageEdgeInsets=_imageEdgeInsets;
 @synthesize showsTouchWhenHighlighted=_showsTouchWhenHighlighted;
 @synthesize titleFont=_titleFont;
+@synthesize titleFontSize=_titleFontSize;
 @synthesize titleNormal=_titleNormal;
 @synthesize titleColorNormal=_titleColorNormal;
 @synthesize titleSelect=_titleSelect;
@@ -87,7 +119,7 @@
 @synthesize backgroundImageSelect=_backgroundImageSelect;
 @synthesize imageNormal=_imageNormal;
 @synthesize imageSelect=_imageSelect;
-
+@synthesize title_FontSize_Color=_title_FontSize_Color;
 //-(instancetype)init{
 //    self=[super init];
 //    if (self) {
@@ -143,6 +175,16 @@
     }
     return _titleFont;
 }
+-(FastTitleFontSize)titleFontSize{
+    if (!_titleFontSize) {
+        __weak __typeof(self) weakSelf = self;
+        _titleFontSize=^(CGFloat size){
+            weakSelf.button.titleLabel.font=[UIFont systemFontOfSize:size];
+            return weakSelf;
+        };
+    }
+    return _titleFontSize;
+}
 -(FastTitleNormal)titleNormal{
     if (!_titleNormal) {
         __weak __typeof(self) weakSelf = self;
@@ -162,6 +204,18 @@
         };
     }
     return _titleColorNormal;
+}
+-(Fast_Title_FontSize_Color)title_FontSize_Color{
+    if (!_title_FontSize_Color) {
+        __weak __typeof(self) weakSelf = self;
+        _title_FontSize_Color=^(NSString *titleNormal,CGFloat size,UIColor *titleColorNormal){
+            [weakSelf.button setTitle:titleNormal forState:UIControlStateNormal];
+            weakSelf.button.titleLabel.font=[UIFont systemFontOfSize:size];
+            [weakSelf.button setTitleColor:titleColorNormal forState:UIControlStateNormal];
+            return weakSelf;
+        };
+    }
+    return _title_FontSize_Color;
 }
 -(FastTitleSelect)titleSelect{
     if (!_titleSelect) {

@@ -90,7 +90,22 @@
 @synthesize returnKeyType=_returnKeyType;
 @synthesize secureTextEntry=_secureTextEntry;
 @synthesize textFieldDidChange=_textFieldDidChange;
+@synthesize placeholderAndText=_placeholderAndText;
 
+-(FastField_pText_pFontSize_pColor_tFontSize_tColor)placeholderAndText{
+    if (!_placeholderAndText) {
+        __weak __typeof(self) weakSelf = self;
+        _placeholderAndText=^(NSString *pText,CGFloat pFontSize,UIColor *pColor,CGFloat tFontSize,UIColor *tColor){
+            weakSelf.textField.placeholder=pText;
+            [weakSelf.textField setValue:[UIFont systemFontOfSize:pFontSize] forKeyPath:@"_placeholderLabel.font"];
+            [weakSelf.textField setValue:pColor forKeyPath:@"_placeholderLabel.textColor"];
+            weakSelf.textField.font=[UIFont systemFontOfSize:tFontSize];
+            weakSelf.textField.textColor=tColor;
+            return weakSelf;
+        };
+    }
+    return _placeholderAndText;
+}
 -(FastFieldText)text{
     if (!_text) {
         __weak __typeof(self) weakSelf = self;

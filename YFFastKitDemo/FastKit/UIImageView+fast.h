@@ -20,7 +20,7 @@ typedef FastImageViewModel * (^FastImage)(UIImage *image);
 
 +(UIImageView *)imageView;
 +(UIImageView *)imageViewAndSuperview:(UIView *)superview;
-
++(UIImageView *)iconImage:(NSString *)iconName;
 @end
 @interface FastImageViewModel : FastModel
 

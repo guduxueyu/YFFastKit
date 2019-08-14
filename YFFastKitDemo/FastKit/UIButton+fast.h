@@ -14,8 +14,12 @@ typedef FastButtonModel * (^FastTitleEdgeInsets)(UIEdgeInsets titleEdgeInsets);
 typedef FastButtonModel * (^FastImageEdgeInsets)(UIEdgeInsets imageEdgeInsets);
 typedef FastButtonModel * (^FastShowsTouchWhenHighlighted)(BOOL showsTouchWhenHighlighted);
 typedef FastButtonModel * (^FastTitleFont)(UIFont *titleFont);
+typedef FastButtonModel * (^FastTitleFontSize)(CGFloat size);
 typedef FastButtonModel * (^FastTitleNormal)(NSString *titleNormal);
 typedef FastButtonModel * (^FastTitleColorNormal)(UIColor *titleColorNormal);
+
+typedef FastButtonModel * (^Fast_Title_FontSize_Color)(NSString *titleNormal,CGFloat size,UIColor *titleColorNormal);
+
 typedef FastButtonModel * (^FastTitleSelect)(NSString *titleSelect);
 typedef FastButtonModel * (^FastTitleColorSelect)(UIColor *titleColorSelect);
 typedef FastButtonModel * (^FastAttributedTitleNormal)(NSAttributedString *attributedTitleNormal);
@@ -36,10 +40,18 @@ typedef FastButtonModel * (^FastImageSelect)(NSString *imageSelect);
 +(UIButton *)contentButton;
 /** **普通按钮** Button ，14号字 */
 +(UIButton *)contentButtonAndSuperview:(UIView *)superview;
+/** **普通按钮** Button ，12号字 */
++(UIButton *)detailButton;
+/** **普通按钮** Button ，12号字 */
++(UIButton *)detailButtonAndSuperview:(UIView *)superview;
 /** **完成** Button ，蓝色18号字 */
 +(UIButton *)doneButton;
 /** **完成** Button ，蓝色18号字 */
 +(UIButton *)doneButtonAndSuperview:(UIView *)superview;
+/** 纯图片Button */
++(UIButton *)imageButton:(NSString *)imageName;
+/** 纯图片Button */
++(UIButton *)imageButton:(NSString *)imageName andSuperview:(UIView *)superview;
 @end
 
 @interface FastButtonModel : FastModel
@@ -56,10 +68,16 @@ typedef FastButtonModel * (^FastImageSelect)(NSString *imageSelect);
 @property (nonatomic, copy, readonly)FastShowsTouchWhenHighlighted showsTouchWhenHighlighted;
 /** Button的文本字号 */
 @property (nonatomic, copy, readonly)FastTitleFont titleFont;
+/** Button的文本字号 */
+@property (nonatomic, copy, readonly)FastTitleFontSize titleFontSize;
 /** 普通状态下的文本 */
 @property (nonatomic, copy, readonly)FastTitleNormal titleNormal;
 /** 普通状态下 文本颜色 */
 @property (nonatomic, copy, readonly)FastTitleColorNormal titleColorNormal;
+
+/** Button的文本字号 */
+@property (nonatomic, copy, readonly)Fast_Title_FontSize_Color title_FontSize_Color;
+
 /** 选中状态下的文本 */
 @property (nonatomic, copy, readonly)FastTitleSelect titleSelect;
 /** 选中状态下 文本颜色 */

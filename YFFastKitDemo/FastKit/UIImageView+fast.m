@@ -30,6 +30,13 @@
     [superview addSubview:imgView];
     return imgView;
 }
++(UIImageView *)iconImage:(NSString *)iconName{
+    UIImageView *imgView=[[UIImageView alloc]init];
+    imgView.image=[UIImage imageNamed:iconName];
+    imgView.contentMode=UIViewContentModeScaleAspectFit;
+    imgView.clipsToBounds=YES;
+    return imgView;
+}
 @end
 @implementation FastImageViewModel
 

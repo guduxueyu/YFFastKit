@@ -17,12 +17,12 @@
 }
 +(UIView *)lineView{
     UIView *line=[[UIView alloc] init];
-    line.backgroundColor=[UIColor colorWithRed:0xc8/255.f green:0xc8/255.f blue:0xc8/255.f alpha:1];
+    line.backgroundColor=[UIColor colorWithRed:0xe9/255.f green:0xe9/255.f blue:0xe9/255.f alpha:1];
     return line;
 }
 +(UIView *)lineViewAndSuperview:(UIView *)superview{
     UIView *line=[[UIView alloc] init];
-    line.backgroundColor=[UIColor colorWithRed:0xc8/255.f green:0xc8/255.f blue:0xc8/255.f alpha:1];
+    line.backgroundColor=[UIColor colorWithRed:0xe9/255.f green:0xe9/255.f blue:0xe9/255.f alpha:1];
     [superview addSubview:line];
     return line;
 }

@@ -13,7 +13,10 @@
 
 typedef FastLabelModel * (^FastText)(NSString *text);
 typedef FastLabelModel * (^FastFont)(UIFont *font);
+typedef FastLabelModel * (^FastFontSize)(CGFloat size);
 typedef FastLabelModel * (^FastTextColor)(UIColor *textColor);
+typedef FastLabelModel * (^Fast_Text_FontSize_Color)(NSString *text,CGFloat size,UIColor *textColor);
+typedef FastLabelModel * (^Fast_Text_FontSize_Color_Ali)(NSString *text,CGFloat size,UIColor *textColor,NSTextAlignment textAlignment);
 typedef FastLabelModel * (^FastAttributedText)(NSAttributedString *attributedText);
 typedef FastLabelModel * (^FastHighlightedTextColor)(UIColor *highlightedTextColor);
 typedef FastLabelModel * (^FastTextAlignment)(NSTextAlignment textAlignment);
@@ -49,7 +52,10 @@ typedef FastLabelModel * (^FastNumberOfLines)(NSInteger numberOfLines);
 
 @property (nonatomic, copy, readonly)FastText text;
 @property (nonatomic, copy, readonly)FastFont font;
+@property (nonatomic, copy, readonly)FastFontSize fontSize;
 @property (nonatomic, copy, readonly)FastTextColor textColor;
+@property (nonatomic, copy, readonly)Fast_Text_FontSize_Color Text_FontSize_Color;
+@property (nonatomic, copy, readonly)Fast_Text_FontSize_Color_Ali Text_FontSize_Color_Ali;
 @property (nonatomic, copy, readonly)FastAttributedText attributedText;
 @property (nonatomic, copy, readonly)FastHighlightedTextColor highlightedTextColor;
 @property (nonatomic, copy, readonly)FastTextAlignment textAlignment;

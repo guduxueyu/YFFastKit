@@ -11,6 +11,8 @@
 
 @class FastTextFieldModel;
 
+typedef FastTextFieldModel * (^FastField_pText_pFontSize_pColor_tFontSize_tColor)(NSString *pText,CGFloat pFontSize,UIColor *pColor,CGFloat tFontSize,UIColor *tColor);
+
 typedef FastTextFieldModel * (^FastFieldText)(NSString *text);
 typedef FastTextFieldModel * (^FastFieldAttributedText)(NSAttributedString *attributedText);
 typedef FastTextFieldModel * (^FastFieldTextColor)(UIColor *textColor);
@@ -60,6 +62,8 @@ typedef FastTextFieldModel * (^FastFieldTextFieldDidChange)(id target,SEL textFi
 @interface FastTextFieldModel : FastModel
 
 @property (nonatomic,strong)UITextField *textField;
+
+@property (nonatomic, copy, readonly)FastField_pText_pFontSize_pColor_tFontSize_tColor placeholderAndText;
 
 @property (nonatomic, copy, readonly)FastFieldText text;
 @property (nonatomic, copy, readonly)FastFieldAttributedText attributedText;

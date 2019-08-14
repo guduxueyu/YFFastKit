@@ -84,12 +84,15 @@
 @synthesize label=_label;
 @synthesize text=_text;
 @synthesize font=_font;
+@synthesize fontSize=_fontSize;
 @synthesize textColor=_textColor;
 @synthesize textAlignment=_textAlignment;
 @synthesize lineBreakMode=_lineBreakMode;
 @synthesize attributedText=_attributedText;
 @synthesize highlightedTextColor=_highlightedTextColor;
 @synthesize numberOfLines=_numberOfLines;
+@synthesize Text_FontSize_Color=_Text_FontSize_Color;
+@synthesize Text_FontSize_Color_Ali=_Text_FontSize_Color_Ali;
 
 -(FastText)text{
     if (!_text) {
@@ -111,6 +114,16 @@
     }
     return _font;
 }
+-(FastFontSize)fontSize{
+    if (!_fontSize) {
+        __weak __typeof(self) weakSelf = self;
+        _fontSize=^(CGFloat size){
+            weakSelf.label.font=[UIFont systemFontOfSize:size];
+            return weakSelf;
+        };
+    }
+    return _fontSize;
+}
 -(FastTextColor)textColor{
     if (!_textColor) {
         __weak __typeof(self) weakSelf = self;
@@ -120,6 +133,31 @@
         };
     }
     return _textColor;
+}
+-(Fast_Text_FontSize_Color)Text_FontSize_Color{
+    if (!_Text_FontSize_Color) {
+        __weak __typeof(self) weakSelf = self;
+        _Text_FontSize_Color=^(NSString *text,CGFloat size,UIColor *textColor){
+            weakSelf.label.text=text;
+            weakSelf.label.font=[UIFont systemFontOfSize:size];
+            weakSelf.label.textColor=textColor;
+            return weakSelf;
+        };
+    }
+    return _Text_FontSize_Color;
+}
+-(Fast_Text_FontSize_Color_Ali)Text_FontSize_Color_Ali{
+    if (!_Text_FontSize_Color_Ali) {
+        __weak __typeof(self) weakSelf = self;
+        _Text_FontSize_Color_Ali=^(NSString *text,CGFloat size,UIColor *textColor,NSTextAlignment textAlignment){
+            weakSelf.label.text=text;
+            weakSelf.label.font=[UIFont systemFontOfSize:size];
+            weakSelf.label.textColor=textColor;
+            weakSelf.label.textAlignment=textAlignment;
+            return weakSelf;
+        };
+    }
+    return _Text_FontSize_Color_Ali;
 }
 -(FastAttributedText)attributedText{
     if (!_attributedText) {

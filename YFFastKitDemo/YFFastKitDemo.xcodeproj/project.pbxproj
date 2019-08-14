@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C257E9A12303AA3D005DA414 /* UILabel+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C257E9902303AA3C005DA414 /* UILabel+fast.m */; };
+		C257E9A22303AA3D005DA414 /* UIImageView+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C257E9932303AA3C005DA414 /* UIImageView+fast.m */; };
+		C257E9A32303AA3D005DA414 /* NSArray+Monad.m in Sources */ = {isa = PBXBuildFile; fileRef = C257E9952303AA3C005DA414 /* NSArray+Monad.m */; };
+		C257E9A42303AA3D005DA414 /* UIView+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C257E9982303AA3C005DA414 /* UIView+fast.m */; };
+		C257E9A52303AA3D005DA414 /* UITextField+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C257E99C2303AA3C005DA414 /* UITextField+fast.m */; };
+		C257E9A62303AA3D005DA414 /* UIButton+layout.m in Sources */ = {isa = PBXBuildFile; fileRef = C257E99D2303AA3C005DA414 /* UIButton+layout.m */; };
+		C257E9A72303AA3D005DA414 /* FastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C257E99E2303AA3C005DA414 /* FastModel.m */; };
+		C257E9A82303AA3D005DA414 /* UIButton+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C257E9A02303AA3C005DA414 /* UIButton+fast.m */; };
 		C2EF3A562227B04B0041A869 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A552227B04B0041A869 /* AppDelegate.m */; };
 		C2EF3A592227B04B0041A869 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A582227B04B0041A869 /* ViewController.m */; };
 		C2EF3A5C2227B04C0041A869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2EF3A5A2227B04C0041A869 /* Main.storyboard */; };
@@ -15,12 +23,6 @@
 		C2EF3A642227B04E0041A869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A632227B04E0041A869 /* main.m */; };
 		C2EF3A6E2227B04E0041A869 /* YFFastKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A6D2227B04E0041A869 /* YFFastKitDemoTests.m */; };
 		C2EF3A792227B04E0041A869 /* YFFastKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EF3A782227B04E0041A869 /* YFFastKitDemoUITests.m */; };
-		C2F81521229404F300E478E4 /* FastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F81514229404F200E478E4 /* FastModel.m */; };
-		C2F81522229404F300E478E4 /* UIView+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F81515229404F200E478E4 /* UIView+fast.m */; };
-		C2F81523229404F300E478E4 /* UIImageView+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F81516229404F200E478E4 /* UIImageView+fast.m */; };
-		C2F81524229404F300E478E4 /* UILabel+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F81517229404F200E478E4 /* UILabel+fast.m */; };
-		C2F81525229404F300E478E4 /* UITextField+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8151B229404F200E478E4 /* UITextField+fast.m */; };
-		C2F81526229404F300E478E4 /* UIButton+fast.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8151F229404F200E478E4 /* UIButton+fast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C257E9902303AA3C005DA414 /* UILabel+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+fast.m"; sourceTree = "<group>"; };
+		C257E9912303AA3C005DA414 /* NSArray+Monad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Monad.h"; sourceTree = "<group>"; };
+		C257E9922303AA3C005DA414 /* UIImageView+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+fast.h"; sourceTree = "<group>"; };
+		C257E9932303AA3C005DA414 /* UIImageView+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+fast.m"; sourceTree = "<group>"; };
+		C257E9942303AA3C005DA414 /* UILabel+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+fast.h"; sourceTree = "<group>"; };
+		C257E9952303AA3C005DA414 /* NSArray+Monad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Monad.m"; sourceTree = "<group>"; };
+		C257E9962303AA3C005DA414 /* UITextField+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+fast.h"; sourceTree = "<group>"; };
+		C257E9972303AA3C005DA414 /* UIView+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+fast.h"; sourceTree = "<group>"; };
+		C257E9982303AA3C005DA414 /* UIView+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+fast.m"; sourceTree = "<group>"; };
+		C257E9992303AA3C005DA414 /* UIButton+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+fast.h"; sourceTree = "<group>"; };
+		C257E99A2303AA3C005DA414 /* FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastKit.h; sourceTree = "<group>"; };
+		C257E99B2303AA3C005DA414 /* FastModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastModel.h; sourceTree = "<group>"; };
+		C257E99C2303AA3C005DA414 /* UITextField+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+fast.m"; sourceTree = "<group>"; };
+		C257E99D2303AA3C005DA414 /* UIButton+layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+layout.m"; sourceTree = "<group>"; };
+		C257E99E2303AA3C005DA414 /* FastModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastModel.m; sourceTree = "<group>"; };
+		C257E99F2303AA3C005DA414 /* UIButton+layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+layout.h"; sourceTree = "<group>"; };
+		C257E9A02303AA3C005DA414 /* UIButton+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+fast.m"; sourceTree = "<group>"; };
 		C2EF3A512227B04B0041A869 /* YFFastKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFFastKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EF3A542227B04B0041A869 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2EF3A552227B04B0041A869 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,19 +76,6 @@
 		C2EF3A742227B04E0041A869 /* YFFastKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFFastKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EF3A782227B04E0041A869 /* YFFastKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFFastKitDemoUITests.m; sourceTree = "<group>"; };
 		C2EF3A7A2227B04E0041A869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2F81514229404F200E478E4 /* FastModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FastModel.m; path = ../../../HSBaseKit/HSBaseKit/Classes/FastKit/FastModel.m; sourceTree = "<group>"; };
-		C2F81515229404F200E478E4 /* UIView+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+fast.m"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UIView+fast.m"; sourceTree = "<group>"; };
-		C2F81516229404F200E478E4 /* UIImageView+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+fast.m"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UIImageView+fast.m"; sourceTree = "<group>"; };
-		C2F81517229404F200E478E4 /* UILabel+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+fast.m"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UILabel+fast.m"; sourceTree = "<group>"; };
-		C2F81518229404F200E478E4 /* UIButton+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+fast.h"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UIButton+fast.h"; sourceTree = "<group>"; };
-		C2F81519229404F200E478E4 /* UITextField+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+fast.h"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UITextField+fast.h"; sourceTree = "<group>"; };
-		C2F8151A229404F200E478E4 /* UILabel+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+fast.h"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UILabel+fast.h"; sourceTree = "<group>"; };
-		C2F8151B229404F200E478E4 /* UITextField+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+fast.m"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UITextField+fast.m"; sourceTree = "<group>"; };
-		C2F8151C229404F200E478E4 /* UIView+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+fast.h"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UIView+fast.h"; sourceTree = "<group>"; };
-		C2F8151D229404F200E478E4 /* FastKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FastKit.h; path = ../../../HSBaseKit/HSBaseKit/Classes/FastKit/FastKit.h; sourceTree = "<group>"; };
-		C2F8151E229404F200E478E4 /* FastModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FastModel.h; path = ../../../HSBaseKit/HSBaseKit/Classes/FastKit/FastModel.h; sourceTree = "<group>"; };
-		C2F8151F229404F200E478E4 /* UIButton+fast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+fast.m"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UIButton+fast.m"; sourceTree = "<group>"; };
-		C2F81520229404F200E478E4 /* UIImageView+fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+fast.h"; path = "../../../HSBaseKit/HSBaseKit/Classes/FastKit/UIImageView+fast.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,19 +106,23 @@
 		C2E3484F2240A558005E2F1B /* FastKit */ = {
 			isa = PBXGroup;
 			children = (
-				C2F8151D229404F200E478E4 /* FastKit.h */,
-				C2F8151E229404F200E478E4 /* FastModel.h */,
-				C2F81514229404F200E478E4 /* FastModel.m */,
-				C2F81518229404F200E478E4 /* UIButton+fast.h */,
-				C2F8151F229404F200E478E4 /* UIButton+fast.m */,
-				C2F81520229404F200E478E4 /* UIImageView+fast.h */,
-				C2F81516229404F200E478E4 /* UIImageView+fast.m */,
-				C2F8151A229404F200E478E4 /* UILabel+fast.h */,
-				C2F81517229404F200E478E4 /* UILabel+fast.m */,
-				C2F81519229404F200E478E4 /* UITextField+fast.h */,
-				C2F8151B229404F200E478E4 /* UITextField+fast.m */,
-				C2F8151C229404F200E478E4 /* UIView+fast.h */,
-				C2F81515229404F200E478E4 /* UIView+fast.m */,
+				C257E99A2303AA3C005DA414 /* FastKit.h */,
+				C257E99B2303AA3C005DA414 /* FastModel.h */,
+				C257E99E2303AA3C005DA414 /* FastModel.m */,
+				C257E9912303AA3C005DA414 /* NSArray+Monad.h */,
+				C257E9952303AA3C005DA414 /* NSArray+Monad.m */,
+				C257E9992303AA3C005DA414 /* UIButton+fast.h */,
+				C257E9A02303AA3C005DA414 /* UIButton+fast.m */,
+				C257E99F2303AA3C005DA414 /* UIButton+layout.h */,
+				C257E99D2303AA3C005DA414 /* UIButton+layout.m */,
+				C257E9922303AA3C005DA414 /* UIImageView+fast.h */,
+				C257E9932303AA3C005DA414 /* UIImageView+fast.m */,
+				C257E9942303AA3C005DA414 /* UILabel+fast.h */,
+				C257E9902303AA3C005DA414 /* UILabel+fast.m */,
+				C257E9962303AA3C005DA414 /* UITextField+fast.h */,
+				C257E99C2303AA3C005DA414 /* UITextField+fast.m */,
+				C257E9972303AA3C005DA414 /* UIView+fast.h */,
+				C257E9982303AA3C005DA414 /* UIView+fast.m */,
 			);
 			path = FastKit;
 			sourceTree = "<group>";
@@ -302,15 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2F81523229404F300E478E4 /* UIImageView+fast.m in Sources */,
-				C2F81524229404F300E478E4 /* UILabel+fast.m in Sources */,
+				C257E9A12303AA3D005DA414 /* UILabel+fast.m in Sources */,
+				C257E9A72303AA3D005DA414 /* FastModel.m in Sources */,
 				C2EF3A592227B04B0041A869 /* ViewController.m in Sources */,
-				C2F81521229404F300E478E4 /* FastModel.m in Sources */,
-				C2F81526229404F300E478E4 /* UIButton+fast.m in Sources */,
 				C2EF3A642227B04E0041A869 /* main.m in Sources */,
-				C2F81525229404F300E478E4 /* UITextField+fast.m in Sources */,
+				C257E9A42303AA3D005DA414 /* UIView+fast.m in Sources */,
+				C257E9A22303AA3D005DA414 /* UIImageView+fast.m in Sources */,
+				C257E9A52303AA3D005DA414 /* UITextField+fast.m in Sources */,
+				C257E9A82303AA3D005DA414 /* UIButton+fast.m in Sources */,
+				C257E9A32303AA3D005DA414 /* NSArray+Monad.m in Sources */,
 				C2EF3A562227B04B0041A869 /* AppDelegate.m in Sources */,
-				C2F81522229404F300E478E4 /* UIView+fast.m in Sources */,
+				C257E9A62303AA3D005DA414 /* UIButton+layout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
